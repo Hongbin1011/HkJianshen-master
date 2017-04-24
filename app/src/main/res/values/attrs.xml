@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--收起展开textview-->
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="showExpandCollapseDrawable" format="boolean" />
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="collapseDrawable" format="reference"/>
+        <attr name="contentTextColor" format="color" />
+        <attr name="collapseExpandTextColor" format="color" />
+        <attr name="contentTextSize" format="dimension" />
+        <attr name="collapseExpandTextSize" format="dimension" />
+        <attr name="textCollapse" format="string" />
+        <attr name="textExpand" format="string" />
+        <attr name="collapseExpandGrarity" >
+            <flag name="left" value="3"/>
+            <flag name="right" value="5"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgress">
+        <attr name="ringColor" format="color"></attr>
+        <attr name="ringProgressColor" format="color"></attr>
+        <attr name="ringWidth" format="dimension"></attr>
+        <attr name="textSize" format="dimension"></attr>
+        <attr name="textColor" format="color"></attr>
+        <attr name="max" format="integer"></attr>
+        <attr name="progress" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="StepViewHorizontal">
+        <attr name="h_bg_radius" format="dimension" />
+        <attr name="h_pro_radius" format="dimension" />
+        <attr name="h_bg_width" format="dimension" />
+        <attr name="h_bg_color" format="color" />
+        <attr name="h_pro_width" format="dimension" />
+        <attr name="h_pro_color" format="color" />
+        <attr name="h_text_padding" format="dimension" />
+        <attr name="h_time_padding" format="dimension" />
+        <attr name="h_max_step" format="integer" />
+        <attr name="h_textsize" format="dimension" />
+        <attr name="h_pro_step" format="integer" />
+    </declare-styleable>
+
+
+</resources>

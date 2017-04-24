@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">浩克健身</string>
+    <string name="recipes">食谱</string>
+    <string name="hulk">全民健身</string>
+    <string name="find">发现</string>
+    <string name="mine">个人中心</string>
+
+    <!--视频-->
+    <string name="videos">视频</string>
+    <string name="video_play_times">%1$s次播放</string>
+
+    <!--发现-->
+    <string name="photo_collections">图集：%1$s</string>
+    <string name="news_from">%1$s %2$s</string>
+
+    <string name="transition_photos">transition_animation_news_photos</string>
+    <string name="recipes_list">食材清单</string>
+
+    <string name="web_view">webview</string>
+    <string name="browser">用浏览器打开</string>
+</resources>

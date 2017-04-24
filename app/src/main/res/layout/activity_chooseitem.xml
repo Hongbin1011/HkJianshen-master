@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/white">
+
+    <include layout="@layout/include_total_toolbar" />
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/id_irc_choose"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@+id/button"-->
+    <!--android:layout_below="@+id/id_total_toolbar_ly"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"></android.support.v7.widget.RecyclerView>-->
+
+    <TextView
+        android:id="@+id/id_chooseitem_qicai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_total_toolbar_ly"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="按器材" />
+
+    <RadioGroup
+        android:id="@+id/id_chooseitem_rg_qicai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_chooseitem_qicai"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rb_choose"
+            android:button="@null"
+            android:gravity="center"
+            android:text="徒手" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rb_choose"
+            android:button="@null"
+            android:gravity="center"
+            android:text="哑铃" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rb_choose"
+            android:button="@null"
+            android:gravity="center"
+            android:text="弹力带" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rb_choose"
+            android:button="@null"
+            android:gravity="center"
+            android:text="瑜伽球" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/id_chooseitem_rg_qicai"
+        android:layout_marginTop="20dp"
+        android:background="#ededed"></View>
+
+    <TextView
+        android:id="@+id/id_chooseitem_buwei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="按部位" />
+
+    <LinearLayout
+        android:id="@+id/id_ly_chooseitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_chooseitem_buwei"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/id_chooseitem_rg_buwei1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rb_choose"
+                android:button="@null"
+                android:gravity="center"
+                android:text="全身" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rb_choose"
+                android:button="@null"
+                android:gravity="center"
+                android:text="胸部" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rb_choose"
+                android:button="@null"
+                android:gravity="center"
+                android:text="腹部" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rb_choose"
+                android:button="@null"
+                android:gravity="center"
+                android:text="背部" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/id_chooseitem_rg_buwei2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_chooseitem_buwei1"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rb_choose"
+                android:button="@null"
+                android:gravity="center"
+                android:text="肩膀" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rb_choose"
+                android:button="@null"
+                android:gravity="center"
+                android:text="手臂" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rb_choose"
+                android:button="@null"
+                android:gravity="center"
+                android:text="腿部" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rb_choose"
+                android:button="@null"
+                android:gravity="center"
+                android:text="臀部" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/id_ly_chooseitem"
+        android:layout_marginTop="20dp"
+        android:background="#ededed"></View>
+    <TextView
+    android:id="@+id/id_chooseitem_nandu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/line2"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="15dp"
+    android:text="按难度" />
+
+    <com.gz.hkjs.app.widget.StepViewHorizontal
+        android:layout_below="@+id/id_chooseitem_nandu"
+        android:id="@+id/hflowview1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="30dp"
+        app:h_bg_radius="6dp"
+        app:h_bg_width='4dp'
+        app:h_max_step="2"
+        app:h_pro_radius='5dp'
+        app:h_pro_width="2dp"
+        app:h_text_padding='10dp'
+        app:h_textsize='11dp'
+        app:h_time_padding='17dp' />
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/id_chooseitem_nandu"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="20dp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:src="@mipmap/nandu" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:text="基础"-->
+                    <!--android:gravity="center|top"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="12sp"/>-->
+            <!--</FrameLayout>-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:layout_marginLeft="47dp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:src="@mipmap/nandu" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:text="进阶"-->
+                    <!--android:gravity="center|top"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="12sp"/>-->
+            <!--</FrameLayout>-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:layout_marginLeft="47dp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:src="@mipmap/nandu" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:text="强化"-->
+                    <!--android:gravity="center|top"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="12sp"/>-->
+            <!--</FrameLayout>-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:layout_marginLeft="47dp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:src="@mipmap/nandu" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:text="突破"-->
+                    <!--android:gravity="center|top"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="12sp"/>-->
+            <!--</FrameLayout>-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:layout_marginLeft="47dp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:src="@mipmap/nandu" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:text="极限"-->
+                    <!--android:gravity="center|top"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="12sp"/>-->
+            <!--</FrameLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@mipmap/nandu_line"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@mipmap/jichu"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@mipmap/jinjie"-->
+                    <!--android:layout_marginLeft="65dp"/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@mipmap/qianghua"-->
+                    <!--android:layout_marginLeft="68dp"/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@mipmap/tupo"-->
+                    <!--android:layout_marginLeft="67dp"/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@mipmap/jixian"-->
+                    <!--android:layout_marginLeft="70dp"/>-->
+            <!--</LinearLayout>-->
+        <!--</FrameLayout>-->
+    <!--</LinearLayout>-->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_color"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

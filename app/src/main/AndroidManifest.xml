@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gz.hkjs.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:name=".app.AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_r"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.main.activity.SplashActivity"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.main.activity.MainActivity" />
+        <activity android:name=".ui.detail.activity.RecipesDetailActivity" />
+        <activity android:name=".ui.detail.activity.FindDetailActivity" />
+        <activity android:name=".ui.main.activity.AddTraningPlanActivity" />
+        <activity android:name=".ui.main.activity.ChooseItemActivity" />
+        <activity android:name=".ui.main.activity.LoginActivity" />
+        <activity android:name=".ui.main.activity.RegActivity" />
+        <activity android:name=".ui.main.activity.JibenInformitionOne" />
+        <activity android:name=".ui.main.activity.JibenInformitionTwo" />
+        <activity android:name=".ui.main.activity.JibenInformitionThree" />
+        <activity android:name=".ui.main.activity.JibenInformitionFour" />
+        <activity android:name=".ui.main.activity.TrainingDataActivity"/>
+        <activity android:name=".ui.main.activity.PasswordActivity"/>
+        <activity android:name=".ui.main.activity.FeedbackActivity" />
+        <activity android:name=".ui.main.activity.InformationActivity"/>
+        <activity android:name=".ui.main.activity.CollectActivity"/>
+        <activity android:name=".ui.main.activity.AccountActivity"/>
+        <activity android:name=".ui.main.activity.PhoneActivity" />
+        <activity android:name=".ui.detail.activity.TrainingVideoDetailActivity"/>
+        <activity android:name=".ui.main.activity.FinishTrainingActivity" />
+        <activity android:name=".ui.main.activity.TrainDataChartViewActivity" />
+    </application>
+
+</manifest>

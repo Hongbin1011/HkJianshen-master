@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_total_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="410dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/bg_shape_gradient_data"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingTop="30dp"
+                            android:text="60"
+                            android:textColor="@color/white"
+                            android:textSize="80sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="1"
+                            android:text="累计训练/分钟"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center|left"
+                                android:text="1728"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center|left"
+                                android:paddingLeft="10dp"
+                                android:text="减脂/千卡"
+                                android:textColor="@color/white"
+                                android:textSize="11sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="28dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center|right"
+                                android:text="368"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center|left"
+                                android:paddingLeft="10dp"
+                                android:text="完成/次"
+                                android:textColor="@color/white"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="28dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center|left"
+                                android:text="549"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center|left"
+                                android:paddingLeft="10dp"
+                                android:text="累计/天"
+                                android:textColor="@color/white"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scrollbars="none">
+
+                    <com.gz.hkjs.app.ui.main.linechart.BrokenLineCusVisitView
+                        android:id="@+id/brokenline"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_train_tongji_data_reylist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+include ':app'
+include ':library:common'
+include ':library:irecyclerview'
+include ':library:jcvideoplayer'
+include ':library:SuperTextViewLibrary'
+include ':library:ruler_lib'
+include ':library:userlibrary_1.0.0'
